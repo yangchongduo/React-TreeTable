@@ -1,0 +1,92 @@
+{
+  "_id" : ObjectId("582ad12b6cfc42461d26c2eb"),
+  "stack" : {
+    "caller" : "com.letvpicture.backend.act.api.controller.UserInfoController#userInfo",
+    "methods" : [
+      {
+        "caller" : "com.letvpicture.common.thirdparty.LetvYuanxianAPI$Dictionary$Terminal#parse",
+        "methods" : [
+          {
+            "caller" : "com.letvpicture.common.thirdparty.LetvYuanxianAPI$Dictionary$Terminal#values",
+            "methods" : [ ],// 这个是方法名
+            "elapsedTime" : 0 // 这个是消耗的时间
+          }
+        ],
+        "elapsedTime" : 0
+      },
+      {
+        "caller" : "com.letvpicture.common.thirdparty.LetvYuanxianAPI#queryMembership",
+        "methods" : [
+          {
+            "caller" : "com.letvpicture.common.utils.BeanValidationUtils#validate",
+            "methods" : [ ],
+            "elapsedTime" : 1
+          },
+          {
+            "caller" : "com.letvpicture.common.thirdparty.LetvYuanxianAPI$Dictionary$Terminal#toString",
+            "methods" : [ ],
+            "elapsedTime" : 0
+          },
+          {
+            "caller" : "com.letvpicture.common.client.HttpClient#create",
+            "methods" : [
+              {
+                "caller" : "com.letvpicture.common.client.HttpClient#init",
+                "methods" : [ ],
+                "elapsedTime" : 0
+              }
+            ],
+            "elapsedTime" : 0
+          },
+          {
+            "caller" : "com.letvpicture.common.client.HttpClient#doRequest",
+            "methods" : [ ],
+            "elapsedTime" : 10
+          },
+          {
+            "caller" : "com.letvpicture.common.thirdparty.LetvYuanxianAPI$Dictionary$MemberShipType#parse",
+            "methods" : [
+              {
+                "caller" : "com.letvpicture.common.thirdparty.LetvYuanxianAPI$Dictionary$MemberShipType#values",
+                "methods" : [ ],
+                "elapsedTime" : 0
+              }
+            ],
+            "elapsedTime" : 0
+          }
+        ],
+        "elapsedTime" : 12
+      },
+      {
+        "caller" : "com.letvpicture.common.bean.RspBean$Builder#create",
+        "methods" : [ ],
+        "elapsedTime" : 0
+      },
+      {
+        "caller" : "com.letvpicture.common.bean.RspBean$Builder#ret",
+        "methods" : [ ],
+        "elapsedTime" : 0
+      },
+      {
+        "caller" : "com.letvpicture.common.bean.RspBean$Builder#msg",
+        "methods" : [ ],
+        "elapsedTime" : 0
+      },
+      {
+        "caller" : "com.letvpicture.common.bean.RspBean$Builder#body",
+        "methods" : [ ],
+        "elapsedTime" : 0
+      },
+      {
+        "caller" : "com.letvpicture.common.bean.RspBean$Builder#build",
+        "methods" : [ ],
+        "elapsedTime" : 0
+      }
+    ],
+    "elapsedTime" : 12
+  },
+  "host" : "10.112.33.187",
+  "pid" : 23575,
+  "thread" : "http-apr-9000-exec-10",
+  "timestamp" : 1479201067
+}
